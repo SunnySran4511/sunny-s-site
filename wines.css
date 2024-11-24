@@ -1,0 +1,292 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+#wrapper{
+   
+    background-color: black;
+    height: 100vh;
+        
+}
+
+
+/* header code */
+
+
+/* header code   */
+
+header{
+    display: block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:  space-between; 
+    /* background-color: white; */
+    /* opacity: 0.3; */
+    font-family:  sans-serif;
+    height: 10%;
+}
+
+.logo {
+    flex: 1;
+    font-size: 25px;
+    font-weight: 550;
+    columns: white;
+    cursor: pointer;
+    margin-left:3% ;
+    
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+    font-family: Impact, fantasy;
+}
+nav{
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+}
+
+ul{
+    min-width: 45%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+li{
+    list-style-type: none;
+    display: inline-block;
+    
+    flex-wrap: nowrap;
+    cursor: pointer;
+}
+nav ul li a{
+     font-weight: bolder; 
+     color:  white;
+     text-decoration: none;
+     font-family: Apple,Chancery, cursive;
+     font-size: medium;
+     /* font-family: Snell Rounded,cursive; */
+    
+}
+.col{
+    color: magenta;
+}
+
+
+/*  footer code  */
+/*  footer styling */
+footer{
+    box-sizing: border-box;
+    background-color: magenta;
+    opacity: 0.9;
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#si{
+    flex: 4;
+    display: flex;
+    justify-content: center;
+}
+
+#si a .fa-brands{
+    font-size: 200%;
+    color: black;
+}
+
+#fc{
+    flex: 3;
+}
+#fc{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#fc textarea{
+    
+    color: magenta;
+    font: bolder;
+    padding: 0;
+    font-family: cursive;
+    border:1px 0 1px 1px black ;
+
+
+}
+#fc button{
+      width: 10%;
+      background-color: black;
+      padding: 0;
+      border: none;
+      color: magenta;
+      border-top-right-radius: 20%;
+      border-bottom-right-radius: 20%;
+}
+
+
+/*   main code  */
+main{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    overflow-y:auto;
+     scroll-behavior: smooth ; 
+}
+
+#o{
+    min-height: 90vh;
+    display: flex;
+    flex-direction: row;
+}
+#op{
+    flex: 1;
+    height: 100%;
+}
+#op img{
+    height: 90%;
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 30%;
+    border-radius: 20%;
+}
+
+#od{
+    flex: 1;
+    border-left: 2px solid magenta;
+    
+    
+}
+
+#odp{
+    height: 90%;
+    width: 70%;
+    background-color: white;
+    margin-top: 5%;
+    margin-left: 15%;
+    border-radius: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid magenta;
+}
+
+#odp h1{
+      color: magenta;
+}
+#odp p{
+    text-align: center;
+}
+#ft{
+    min-height: 90vh;
+    border-top: 2px solid magenta;
+    display: flex;
+    flex-direction: row;
+}
+#cdp{
+    flex: 1;
+    border-right: 2px solid magenta;
+
+}
+#pn{
+    flex: 1;
+    border-right: 2px solid magenta;
+}
+#san{
+    flex: 1;
+    border-right: 2px solid magenta;
+}
+#wa{
+    flex: 1;
+    border-left: 2px solid magenta;
+}
+.ftt{
+    height: 100%;
+    margin-top: 5%;
+    color: white;
+    font-family: cursive;
+    text-align: center;
+}
+
+.ftt img{
+     height: 80%;
+     width: 80%;
+     margin-left:10%;
+     border-radius: 5%;
+     margin-top: 10%;
+     border: 1px solid magenta;
+     display: flex;
+     justify-content: space-around;
+}
+
+
+@media (max-width: 768px){
+    
+    header{
+        min-height: 300px;
+        flex-direction: column;
+    }
+
+
+    .logo{
+        margin:auto
+    }
+    nav ul{
+        min-height: 200px;
+        flex-direction: column;
+    }
+     
+    footer{
+        flex-direction: column;
+        align-items: center;
+        height: 160px;
+    }
+    #si{
+        flex: 1;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    #si a .fa-brands{
+        font-size: medium;
+        color: black;
+    }
+    
+    #fc{
+        flex: 1;
+    }
+    #fc{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    #fc textarea{
+        
+        color: magenta;
+        font: medium;
+        padding: 0;
+        font-family: cursive;
+        border:1px 0 1px 1px black ;
+    
+    
+    }
+    #fc button{
+          width: 20%;
+          background-color: black;
+          padding: 0;
+          border: none;
+          color: magenta;
+          border-top-right-radius: 20%;
+          border-bottom-right-radius: 20%;
+    }
+    
+
+
+}
